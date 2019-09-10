@@ -1,0 +1,26 @@
+package com.hcl.Inh;
+
+class First {
+	static {
+		System.out.println("Base Class Static...");
+	}
+	public First() {
+		System.out.println("Base Class Constructor...");
+	}
+}
+
+class Second extends First {
+	static {
+		System.out.println(" Derived Class Static...");
+	}
+	public Second() {
+		System.out.println("Derived Class Constructor..");
+	}
+}
+
+public class Inhc {
+	public static void main(String[] args) {
+		new Second();
+	}
+
+}

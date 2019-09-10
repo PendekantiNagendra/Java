@@ -1,0 +1,13 @@
+package com.hcl.interfacedemo;
+
+
+
+
+
+public class MultiInh {
+public static void main(String[] args) {
+	Test obj=new Test();
+	obj.email();
+	obj.name();
+}
+}

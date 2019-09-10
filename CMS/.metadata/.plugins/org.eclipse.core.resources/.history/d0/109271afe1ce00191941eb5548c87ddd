@@ -1,0 +1,9 @@
+package com.hcl.cms;
+
+public class Feedback {
+	private String fId;
+	private String studentName;
+	private String instructor;
+	private String subject;
+	private String fbvalue;
+}

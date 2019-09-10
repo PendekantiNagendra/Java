@@ -1,0 +1,6 @@
+package com.hcl.hello;
+
+public class HelloImp implements Hello{
+	
+
+}

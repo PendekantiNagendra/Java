@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+      <div id="Personal Details" style="Color : #0900C4;
+      font: Helvetica 12pt; border: 1px Solid Black;">
+      <b> Welcome to Personal Details Page</b> <br/>
+      <p>
+        Hi I am Nagendra From Nandyal
+        </p>
+      </div> <br/>
+      
+       <div id="Academic Details" style="Color : #FF0000;
+      font: Helvetica 12pt; border: 1px Solid Black;">
+      <b> Welcome tO Academic Details Page</b> <br/>
+      <p>
+        Hi I am from Sathyabama University
+        </p>
+      </div> <br/>
+      
+      
+</body>
+</html>

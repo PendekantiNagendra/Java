@@ -1,0 +1,31 @@
+package com.hcl.inventory;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+
+
+public class StockDao {
+	PreparedStatement pst;
+	  Connection con;
+	  
+	public String generateStockidDao() {
+		con = DaoConnection.getConnection();
+		String stockid = "";
+		String cmd = " ";
+		try {
+			pst = con.prepareStatement(cmd);
+			 ResultSet rs = pst.executeQuery();
+		      rs.next();
+		      stockid = rs.getString("stockid");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		// TODO Auto-generated method stub
+		return stockid;
+	}
+
+}

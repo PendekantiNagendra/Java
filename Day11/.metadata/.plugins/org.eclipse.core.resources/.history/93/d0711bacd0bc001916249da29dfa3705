@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+      <ol type="1>
+      <li>Nagendra</li>
+        <li>Sai</li>
+          <li>Sree</li>
+            <li>Ram</li>
+      </ol>
+      <hr/>
+       <ol type="1 start="5">
+      <li>Nagendra</li>
+        <li>Sai</li>
+          <li>Sree</li>
+            <li>Ram</li>
+      </ol>
+      
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+       function sum() {
+    	   if (isNaN(frmCalc.txtFirstNo.value=="")) {
+    		   document.getElementById("err1").
+    		   innerHTML="Only Numbers Plz....";
+    		   return;
+    	   } else {
+    		   document.getElementById("err1").
+    		   innerHTML="";
+    	   }
+    	   
+    	   if (frmCalc.txtFirstNo.value=="") {
+    		   document.getElementById("err1").
+    		   innerHTML="Please Enter First No";
+    		   return;
+    	   } else {
+    		   document.getElementById("err1").
+    		   innerHTML="";
+    	   }
+    	   
+    	   if (isNaN(frmCalc.txtFirstNo.value=="")) {
+    		   document.getElementById("err2").
+    		   innerHTML="Only Numbers Plz....";
+    		   return;
+    	   } else {
+    		   document.getElementById("err2").
+    		   innerHTML="";
+    	   }
+    	   
+    	   if (frmCalc.txtSecondNo.value=="") {
+    		   document.getElementById("err2").
+    		   innerHTML="Please Enter Second No";
+    		   return;
+    	   } else {
+    		   document.getElementById("err2").
+    		   innerHTML="";
+    	   }
+    	   
+    	   var a, b, c;
+    	   a=parseInt(frmCalc.txtFirstNo.value);
+    	   b=parseInt(frmCalc.txtSecondNo.value);
+    	  c=a+b;
+    	  frmCalc.txtResult.value=c;
+       }
+       
+       function sub() {
+    	   if (isNaN(frmCalc.txtFirstNo.value=="")) {
+    		   document.getElementById("err1").
+    		   innerHTML="Only Numbers Plz....";
+    		   return;
+    	   } else {
+    		   document.getElementById("err1").
+    		   innerHTML="";
+    	   }
+    	  
+    	   if (frmCalc.txtFirstNo.value=="") {
+    		   document.getElementById("err1").
+    		   innerHTML="Please Enter First No";
+    		   return;
+    	   } else {
+    		   document.getElementById("err1").
+    		   innerHTML="";
+    	   }
+    	   
+    	   if (isNaN(frmCalc.txtFirstNo.value=="")) {
+    		   document.getElementById("err2").
+    		   innerHTML="Only Numbers Plz....";
+    		   return;
+    	   } else {
+    		   document.getElementById("err2").
+    		   innerHTML="";
+    	   }
+    	   
+    	   if (frmCalc.txtSecondNo.value=="") {
+    		   document.getElementById("err2").
+    		   innerHTML="Please Enter Second No";
+    		   return;
+    	   } else {
+    		   document.getElementById("err2").
+    		   innerHTML="";
+    	   }
+    	   var a, b, c;
+    	   a=parseInt(frmCalc.txtFirstNo.value);
+    	   b=parseInt(frmCalc.txtSecondNo.value);
+    	  c=a-b;
+    	  frmCalc.txtResult.value=c;
+       }
+       
+       function mult() {
+    	   if (isNaN(frmCalc.txtFirstNo.value=="")) {
+    		   document.getElementById("err1").
+    		   innerHTML="Only Numbers Plz....";
+    		   return;
+    	   } else {
+    		   document.getElementById("err1").
+    		   innerHTML="";
+    	   }
+    	   
+    	   if (frmCalc.txtFirstNo.value=="") {
+    		   document.getElementById("err1").
+    		   innerHTML="Please Enter First No";
+    		   return;
+    	   } else {
+    		   document.getElementById("err1").
+    		   innerHTML="";
+    	   }
+    	   
+    	   if (isNaN(frmCalc.txtFirstNo.value=="")) {
+    		   document.getElementById("err2").
+    		   innerHTML="Only Numbers Plz....";
+    		   return;
+    	   } else {
+    		   document.getElementById("err2").
+    		   innerHTML="";
+    	   }
+    	   
+    	   if (frmCalc.txtSecondNo.value=="") {
+    		   document.getElementById("err2").
+    		   innerHTML="Please Enter Second No";
+    		   return;
+    	   } else {
+    		   document.getElementById("err2").
+    		   innerHTML="";
+    	   }
+    	   var a, b, c;
+    	   a=parseInt(frmCalc.txtFirstNo.value);
+    	   b=parseInt(frmCalc.txtSecondNo.value);
+    	  c=a*b;
+    	  frmCalc.txtResult.value=c;
+       }
+       
+    </script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+      <form name="frmCalc">
+          <center>
+             <table border="3">
+               <tr>
+                 <th colSpan="2">
+                 Calc Form
+                </th>
+              </tr>
+                
+                <tr>
+                <th>First NO</th>
+                <td>
+                <input type="text"  name="txtFirstNo" />
+                </td>
+                </tr>
+                
+                 <tr>
+                <th>Second NO</th>
+                <td>
+                <input type="text"  name="txtSecondNo" />
+                <span id="err1"></span>
+                </td>
+                </tr>
+                
+                <tr>
+                <th>Result</th>
+                <td>
+                <input type="text"  name="txtResult" />
+                <span id="err2"></span>
+                </td>
+                </tr>
+                
+                <tr>
+                <th colSpan="2">
+                
+                <input type="button" value="Sum"
+                onClick="sum()" />
+                &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                <input type="button" value="Sub"
+                onClick="sub()" />
+                &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                <input type="button" value="Mult" 
+                onClick="mult()"/>
+                &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+               </th>
+                </tr>
+                
+             </table>
+          
+          </center>
+      </form>
+</body>
+</html>

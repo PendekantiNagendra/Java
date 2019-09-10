@@ -1,0 +1,16 @@
+package com.hcl.Ex;
+
+public class RomanNo {
+	String[] romansArray=new String[]{
+			"I", "V", "X", "L", "C"	};
+	public int getNumberOfDigits(int num){
+	int digits=0;
+	if(num>999){
+		
+	}
+	}
+	private StringBuilder getRomanNo(int num){
+		
+	}
+return num;
+}

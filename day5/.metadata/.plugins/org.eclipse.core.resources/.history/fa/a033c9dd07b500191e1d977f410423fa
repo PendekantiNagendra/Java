@@ -1,0 +1,9 @@
+package com.hcl.collections;
+
+public class Scan2 {
+	public static void main(String[] args) {
+		System.out.println("Enter 2 nos");
+		
+	}
+
+}

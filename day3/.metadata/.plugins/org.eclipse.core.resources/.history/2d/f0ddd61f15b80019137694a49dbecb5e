@@ -1,0 +1,40 @@
+package com.hcl.varars;
+
+public class Attendance {
+  /**
+  * method display.
+  *
+  */
+
+  public static void display(Object... ob) { // Object... is a Variable
+    // argument type
+    for (Object object : ob) { // forEach loop
+      System.out.println(object + " ");
+    }
+  }
+  /**
+  * method show.
+  *
+  */
+ 
+  public static void show(String... name) { // String... is a Variable
+    // argument type
+    for (String s : name) { // forEach loop
+      System.out.print(s + " ");
+    }
+    System.out.println();
+  }
+  /**
+  * main.
+  *
+  */
+
+  public static void main(String[] args) {
+		show();
+		show("Nagendra", "Rishab", "Sai");
+		show("Yash", "Kumar");
+
+		display();
+		display(12, "Ram");
+	}
+}

@@ -1,0 +1,6 @@
+package com.hcl.hotel;
+
+public class Billing {
+	private String bookId
+	private String
+}

@@ -1,0 +1,21 @@
+package com.hcl.Ex;
+ class First{
+	 public void show (){
+		 System.out.println("First Method");
+	 }
+    
+ }
+ class Second extends First{
+	 public void show(){
+		 System.out.println("Second method");
+	 }
+ }
+public class ExInh {
+	public static void main(String[] args) {
+		First ob1=new First();
+		Second ob2=(Second)ob1;
+		ob2.show();
+	}
+	
+
+}

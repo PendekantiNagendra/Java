@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE beans PUBLIC 
+"-//SPRING//DTD BEAN//EN" 
+"http://www.springframework.org/dtd/spring-beans.dtd"> 
+
+<beans>
+   <bean id="bean1" class="com.hcl.beans.Student">
+      <property name="sno" value="1" />
+      <property name="name" value="Nagendra" />
+      <property name="LunchBox">
+           <bean class="LunchBox">
+             <property name="Snacks" value="Burger" />
+           </bean>
+      </property>
+   </bean>
+</beans>
+
+<beans>
+<bean id="bean1" class="com.hcl.beans.Student">
+      <property name="sno" value="2" />
+      <property name="name" value="Sai" />
+      <property name="LunchBox">
+           <bean class="LunchBox">
+             <property name="Snacks" value="Pizza" />
+           </bean>
+      </property>
+   </bean>
+</beans>
+
+<beans>
+<bean id="bean1" class="com.hcl.beans.Student">
+      <property name="sno" value="3" />
+      <property name="name" value="Venky" />
+      <property name="LunchBox">
+           <bean class="LunchBox">
+             <property name="Snacks" value="Biryani" />
+           </bean>
+      </property>
+   </bean>
+</beans>

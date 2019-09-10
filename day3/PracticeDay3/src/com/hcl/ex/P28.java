@@ -1,0 +1,15 @@
+package com.hcl.ex;
+
+public class P28 {
+  /**
+  * main.
+  *
+  */
+
+  public static void main(String[] args) {
+    C2 obj = new C2();
+    C1 ob = new C1();
+    obj.test();
+    ob.test();
+  }
+}

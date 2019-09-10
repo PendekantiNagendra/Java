@@ -1,0 +1,26 @@
+package com.hcl.Interface;
+
+interface IOne{
+	void name();
+}
+interface ITwo{
+	void name();
+}
+interface IThree{
+	void name();
+}
+class Demo implements IOne,ITwo, IThree{
+
+	@Override
+	public void name() {
+		// TODO Auto-generated method stub
+		System.out.println("Nagendra");
+	}
+	
+}
+public class IntfTest {
+public static void main(String[] args) {
+	Demo d=new Demo();
+	d.name();
+}
+}

@@ -1,0 +1,27 @@
+package com.hcl.files;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+/**
+ * class.
+ *
+ */
+
+public class FileRead {
+  /**
+  *main.
+  *
+  */
+	public static void main(String[] args) {
+		File f1=new File("C:/hcljava/day4/day4/src/com/hcl/ex/Email.java");
+		try {
+			FileReader fr=new FileReader(f1);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

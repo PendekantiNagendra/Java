@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+      <form name="frmData" >
+      <center>
+      Email :
+      <input type="email" required="Required"
+      name="Email" />
+      <br/>
+      
+      Url :
+      <input type="Url" required="Required"
+      />  <br/>
+      Date :
+      <input type="date" required="Required"
+      name="date" />
+      <br/>
+      Month :
+      <input type="Month" required="Required"
+      name="Month" />
+      <br/>
+      range :
+      <input type="range" required="Required"
+      max="10" min="1"
+      value="8" />
+      <br/>
+      
+      </center>
+      </form>
+</body>
+ </html>

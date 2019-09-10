@@ -1,0 +1,9 @@
+package com.hcl.inventory;
+
+public class AddStock {
+	private String stockid;
+	private String itemName;
+	private double price;
+	private int quantityAvail;
+
+}

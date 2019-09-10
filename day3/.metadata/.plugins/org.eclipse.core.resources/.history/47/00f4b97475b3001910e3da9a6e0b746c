@@ -1,0 +1,8 @@
+package com.hcl.Ex;
+
+public class Snippet {
+	public static void main(String[] args) {
+		Integer.parseInt(args[0]);
+	}
+}
+

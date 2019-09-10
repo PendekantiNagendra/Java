@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.hcl.Varars.Second"/>
+<fullyQualifiedTypeName name="com.hcl.Varars.Amit"/>
+<fullyQualifiedTypeName name="com.hcl.Interface.Test"/>
+<fullyQualifiedTypeName name="com.hcl.Interface.Demo"/>
+<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+<fullyQualifiedTypeName name="com.hcl.Ex.First"/>
+<fullyQualifiedTypeName name="com.hcl.Ex.Second"/>
+<fullyQualifiedTypeName name="java.lang.ClassCastException"/>
+<fullyQualifiedTypeName name="com.hcl.Ex.C2"/>
+<fullyQualifiedTypeName name="com.hcl.Ex.Employ"/>
+</qualifiedTypeNameHistroy>

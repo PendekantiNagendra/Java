@@ -1,0 +1,15 @@
+package com.hcl.boxing;
+public class C1{
+	public void set(){
+		System.out.println("Set Name");
+	}
+}
+
+public class PrivateClass {
+	 private int a=5;
+	 public static void main(String[] args) {
+		PrivateClass p=new PrivateClass();
+		
+	}
+
+}

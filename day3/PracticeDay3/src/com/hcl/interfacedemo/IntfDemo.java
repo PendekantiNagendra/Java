@@ -1,0 +1,16 @@
+package com.hcl.interfacedemo;
+
+public class IntfDemo {
+  /**
+  * main.
+  *
+  */
+
+  public static void main(String[] args) {
+    ITraining[] arr = new ITraining[] { new Hema(), new Keerthana() };
+    for (ITraining t : arr) {
+      t.name();
+      t.email();
+    }
+  }
+}

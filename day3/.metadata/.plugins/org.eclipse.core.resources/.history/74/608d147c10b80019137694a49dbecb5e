@@ -1,0 +1,8 @@
+package com.hcl.Interface;
+
+interface ITraining {
+	void name();
+
+	void email();
+}
+

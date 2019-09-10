@@ -1,0 +1,27 @@
+package com.hcl.Interface;
+
+interface IFirst{
+	void name();
+}
+interface ISecond{
+	
+	void name();
+}
+interface IThird{
+	void name();
+}
+class Demo implements IFirst,ISecond, IThird{
+
+	@Override
+	public void name() {
+		// TODO Auto-generated method stub
+		System.out.println("Nagendra");
+	}
+	
+}
+public class IntfTest {
+public static void main(String[] args) {
+	Demo d=new Demo();
+	d.name();
+}
+}

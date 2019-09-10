@@ -1,0 +1,4 @@
+127.0.0.1 - - [28/Aug/2019:13:20:56 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [28/Aug/2019:13:20:57 +0530] "GET /EmsProject/Login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [28/Aug/2019:13:21:07 +0530] "GET /EmsProject/Login.jsp?empId=1000&secretCode=Rishab HTTP/1.1" 200 757
+0:0:0:0:0:0:0:1 - - [28/Aug/2019:15:29:01 +0530] "GET /EmsProject/ApproveDeny.html HTTP/1.1" 304 -

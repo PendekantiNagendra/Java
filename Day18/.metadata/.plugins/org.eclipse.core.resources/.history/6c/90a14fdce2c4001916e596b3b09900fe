@@ -1,0 +1,150 @@
+package com.hcl.inventory;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+
+
+public class StockDao {
+	PreparedStatement pst;
+	  Connection con;
+	  
+	  public int generateorderid() {
+		  con = DaoConnection.getConnection();
+		  int orderid = 0;
+		  String cmd = "Select case when Max(orderid) is Null"
+				  + " then 1 else Max(orderid) + 1 End orderNo"
+				  + "from orders";
+		  try {
+			pst = con.prepareStatement(cmd);
+			ResultSet rs = pst.executeQuery();
+			if (rs.next()) {
+				orderid = rs.getInt("orderNo");
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		  return orderid;
+	  }
+	  
+	  public String placeOrderDao(String stockid, int qnty) {
+		  con = DaoConnection.getConnection();
+		  String cmd = "";
+		  String result = "";
+		  Stock stock = StockBal.searchStockBal(stockid);
+		  ResultSet rs;
+		try {
+			if (stock != null) {
+				  int tempQnty = stock.getQuantityAvail();
+				  if (qnty != 0 && qnty <= tempQnty) {
+					  double price = stock.getPrice();
+					  double billAmt = qnty * price;
+					  cmd = "INSERT INTO Orders values(?,?,?,?);";
+					  pst = con.prepareStatement(cmd);
+		              pst.setInt(1, generateorderid());
+		              pst.setString(2, stockid);
+		              pst.setInt(3, qnty);
+		              pst.setDouble(4, billAmt);
+		              pst.executeUpdate(); 
+		             
+		              // update Stock Records
+					  cmd = "UPDATE Stock set QuantityAvail = ? WHERE stockId = ?";
+					  pst = con.prepareStatement(cmd);
+					  pst.setInt(1, (tempQnty - qnty));
+					  pst.setString(2, stockid);
+					  pst.executeUpdate(); 
+					  // Update Gross Amount Records from amount table
+					  cmd = "SELECT Gamt FROM amount";
+					  pst = con.prepareStatement(cmd);
+					  rs = pst.executeQuery();
+					  result = "Order Placed";
+					  if (rs.next()) {
+						  double amount = rs.getInt("Gamt");
+		    			  amount = amount + billAmt;
+		    			  cmd = "UPDATE amount set Gamt = ?";
+		    			  pst = con.prepareStatement(cmd);
+		    			  pst.setDouble(1, amount);
+		    			  pst.executeUpdate();  
+					  }
+				  } 
+			  }  
+		} catch (SQLException e) {
+	      e.printStackTrace();
+		}
+		return result; 
+	  }
+	
+	  	  
+	public Stock searchStockDao(String stockid) {
+		
+		  con = DaoConnection.getConnection();
+		  String cmd = "Select * from Stock where stockid = ?";
+		  Stock objStock = new Stock();
+		  try {
+			pst = con.prepareStatement(cmd);
+			pst.setString(1,stockid);
+			ResultSet rs = pst.executeQuery();
+			
+			 while (rs.next()) {
+				 System.out.println("ffjvghjgfmjhg");
+			        objStock.setItemName(rs.getString("ItemName"));
+			        objStock.setPrice(rs.getInt("Price"));
+			        objStock.setQuantityAvail(rs.getInt("QuantityAvail"));
+			 }
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+			// TODO Auto-generated method stub
+			return objStock;
+		}
+	  
+	  public String addStockDao(Stock stock) {
+		  con = DaoConnection.getConnection();
+		  String result = "";
+		  String cmd = "Insert into Stock values(?,?,?,?)";
+		  try {
+			pst = con.prepareStatement(cmd);
+			pst.setString(1, stock.getStockid());
+			pst.setString(2, stock.getItemName());
+			pst.setDouble(3, stock.getPrice());
+			pst.setInt(4, stock.getQuantityAvail());
+			pst.executeUpdate();
+			result = "Stock Added...";
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		  return result;
+	  }
+	  
+	public String generateStockidDao() {
+		con = DaoConnection.getConnection();
+		String stockid;
+		String cmd = "Select max(stockid) sid from stock";
+		String stid = "";
+		try {
+			pst = con.prepareStatement(cmd);
+			 ResultSet rs = pst.executeQuery();
+		      rs.next();
+		      stid = rs.getString("sid");
+		      int id = Integer.parseInt(stid.substring(1));
+		      id++;
+		      stid = String.format("S%03d", id);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		// TODO Auto-generated method stub
+		return stid;
+	}
+
+	
+
+	
+
+}

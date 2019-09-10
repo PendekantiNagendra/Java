@@ -1,0 +1,12 @@
+package com.hcl.emp;
+
+import java.util.Scanner;
+
+public class EmployInsertMain {
+
+	public static void main(String[] args) {
+		Employ e = new Employ();
+		Scanner sc = new Scanner(System.in);
+		
+	}
+}

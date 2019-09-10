@@ -1,0 +1,16 @@
+package com.hcl.Varars;
+
+public class Attendance {
+	public static void show(String... name) {
+		for (String s : name) {
+			System.out.println(s + " ");
+		}
+		System.out.println();
+	}
+
+	public static void main(String[] args) {
+		show();
+		show("Nagendra", "Rishab", "Sai");
+		show("Yash", "Kumar");
+	}
+}

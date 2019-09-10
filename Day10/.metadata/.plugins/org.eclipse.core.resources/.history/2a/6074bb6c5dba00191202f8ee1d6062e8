@@ -1,0 +1,20 @@
+package com.hcl.junitpractice;
+
+public class Data {
+	
+	public int max3(int a, int b, int c) {
+		int  m = a;
+		if (m < a) {
+			m = b;
+		}
+		return m;
+	}
+	
+	public String sayHello() {
+		return "Welcome to Junit";
+	}
+	public int sum(int a, int b) {
+		return a + b;
+	}
+
+}

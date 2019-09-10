@@ -1,0 +1,39 @@
+package com.hcl.bank;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.hcl.bank.DaoConnection;
+
+public class SearchAccount {
+	private  int accno;
+
+	public int getAccno() {
+		return accno;
+	}
+
+	public void setAccno(int accno) {
+		this.accno = accno;
+	}
+	
+	public ResultSet searchAccount() {
+		Connection con = DaoConnection.getConnection();
+		String cmd = "Select *from Employ where empno=?";
+		ResultSet rs = null;
+		PreparedStatement pst;
+		try {
+			pst = con.prepareStatement(cmd);
+			pst.setInt(1, accno);
+			rs = pst.executeQuery();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		
+		}
+		 return rs;
+	}
+	}
+
+

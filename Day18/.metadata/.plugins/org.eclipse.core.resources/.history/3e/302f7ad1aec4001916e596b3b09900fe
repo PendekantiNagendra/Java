@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+     <form method="get" action="SearchAccount.jsp">
+       <center>
+         City :
+         <input type="text" name="city" />
+         State :
+         <input type="text" name="state" />
+         <input type="submit" value="Update" />
+       </center>
+     </form>
+</body>
+</html>

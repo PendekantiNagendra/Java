@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+function gotCursor() {
+	alert("Cursor Placed");
+}
+
+function lostCursor() {
+	alert("Cursor Left Current Control");
+}

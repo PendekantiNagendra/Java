@@ -1,0 +1,58 @@
+package com.hcl.studentsphn.model;
+
+import java.util.Date;
+
+@Entity 
+public class Student {
+	private int rollNo;
+	private String sName;
+	private int age;
+	private String gender;
+	private String country;
+	private Date dateOfJoin;
+	private float finalScore;
+	public int getRollNo() {
+		return rollNo;
+	}
+	public void setRollNo(int rollNo) {
+		this.rollNo = rollNo;
+	}
+	public String getsName() {
+		return sName;
+	}
+	public void setsName(String sName) {
+		this.sName = sName;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public String getCountry() {
+		return country;
+	}
+	public void setCountry(String country) {
+		this.country = country;
+	}
+	public Date getDateOfJoin() {
+		return dateOfJoin;
+	}
+	public void setDateOfJoin(Date dateOfJoin) {
+		this.dateOfJoin = dateOfJoin;
+	}
+	public float getFinalScore() {
+		return finalScore;
+	}
+	public void setFinalScore(float finalScore) {
+		this.finalScore = finalScore;
+	}
+	
+
+}

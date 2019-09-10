@@ -1,0 +1,33 @@
+package com.hcl.inventory;
+
+public class Order {
+	private int orderId;
+	private int StockID;
+	private int QtyOrd;
+    private int billAmt;
+	public int getOrderId() {
+		return orderId;
+	}
+	public void setOrderId(int orderId) {
+		this.orderId = orderId;
+	}
+	public int getStockID() {
+		return StockID;
+	}
+	public void setStockID(int stockID) {
+		StockID = stockID;
+	}
+	public int getQtyOrd() {
+		return QtyOrd;
+	}
+	public void setQtyOrd(int qtyOrd) {
+		QtyOrd = qtyOrd;
+	}
+	public int getBillAmt() {
+		return billAmt;
+	}
+	public void setBillAmt(int billAmt) {
+		this.billAmt = billAmt;
+	}
+    
+}

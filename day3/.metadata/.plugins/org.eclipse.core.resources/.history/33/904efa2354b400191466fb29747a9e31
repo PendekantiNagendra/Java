@@ -1,0 +1,14 @@
+package com.hcl.abstrac;
+
+/**
+ *class.
+ *
+ */
+class Janani extends Emp {
+
+	public Janani(int empno, String name, double basic) {
+		super(empno, name, basic);
+
+	}
+
+}

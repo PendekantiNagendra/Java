@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+     <form  method="get" action="Login.Servlet">
+        <center>
+           Emp Id :
+           <input type="text" name="empId" />
+           Secret Code :
+           <input type="text" name="secretCode" />
+           <input type="submit" value="Login" />        
+        </center>
+     </form>
+</body>
+</html>

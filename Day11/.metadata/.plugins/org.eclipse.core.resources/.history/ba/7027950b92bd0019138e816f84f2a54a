@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+      <form name="frmCalc">
+          <center>
+             <table border="3">
+               <tr>
+               <th colSpan="2">
+               Calc Form
+               </th>
+                </tr>
+                
+                <tr>
+                <th>First NO</th>
+                <td>
+                <input type="text"  name="TxtFirstNo" />
+                </td>
+                </tr>
+                
+                 <tr>
+                <th>Second NO</th>
+                <td>
+                <input type="text"  name="TxtSecondNo" />
+                </td>
+                </tr>
+                
+                <tr>
+                <th>Result</th>
+                <td>
+                <input type="text"  name="TxtResult" />
+                </td>
+                </tr>
+                
+                <tr>
+                <th colSpan="2">
+                
+                <input type="button" value="Sum" />
+                &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                <input type="button" value="Sub" />
+                &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                <input type="button" value="Mult" />
+                &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+               </th>
+                </tr>
+                
+             </table>
+          
+          </center>
+      </form>
+</body>
+</html>

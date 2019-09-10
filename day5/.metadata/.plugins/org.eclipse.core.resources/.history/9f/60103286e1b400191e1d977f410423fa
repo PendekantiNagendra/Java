@@ -1,0 +1,36 @@
+package com.hcl.assertion;
+
+
+import java.io.DataInputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+/**
+ * class.
+ *
+ */
+
+public class DataIn {
+  /**
+  * main.
+  *
+  */
+  public static void main(String[] args) {
+	try {
+		DataInputStream dIn = new DataInputStream(new FileInputStream("c:/files/data.txt"));
+		dIn.writeInt(12);
+		((Object) dIn).writeUTF("HCL");
+		dIn.writeDouble(58664.6);
+		dIn.writeBoolean(true);
+		dIn.close();
+		System.out.println("***File Created***");
+	} catch (FileNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}	
+	}
+}

@@ -1,0 +1,12 @@
+package com.hcl.inventory;
+
+import org.junit.Test;
+
+public class StockTestCase {
+	
+	@Test
+	public void testGettersAndSetters() {
+		
+	}
+
+}

@@ -1,0 +1,35 @@
+package com.hcl.beans;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class DepartmentInsert {
+	private int empno;
+	private String name;
+	private String dept;
+	private String desig;
+	private int basic;
+	
+	
+	public String insertEmploy() {
+		Connection con=DaoConnection.getConnection();
+		String cmd="insert into Employ values(?,?,?,?,?)";
+		String result="";
+		try {
+			PreparedStatement pst=con.prepareStatement(cmd);
+			pst.setInt(1, empno);
+			pst.setString(2, name);
+			pst.setString(3, dept);
+			pst.setString(4, desig);
+			pst.setInt(5, basic);
+			pst.executeUpdate();
+			result="Record Inserted...";
+		} catch (SQLException e) {
+			e.printStackTrace();
+			result=e.getMessage();
+		}
+		return result;
+	}
+
+}

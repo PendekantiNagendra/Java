@@ -1,0 +1,54 @@
+package com.hcl.inventory;
+
+import static org.junit.Assert.*;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.junit.Test;
+
+import com.mysql.jdbc.PreparedStatement;
+
+
+public class StockTestCase {
+	
+	@Test
+	public void testGenerateStockid() {
+		String stockid = "";
+		Connection con = DaoConnection.getConnection();
+		String cmd ="Select * from stock order by stockid desc limit 1" ;
+		try {
+			PreparedStatement pst = (PreparedStatement) con.prepareStatement(cmd);
+			ResultSet rs = pst.executeQuery();
+			rs.next();
+			stockid = rs.getString("stockid");
+			stockid = stockid.substring(1);
+			int tempId = Integer.parseInt(stockid);
+			tempId += 1;
+			stockid = String.format("S%2d", tempId);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	    assertEquals(stockid, StockBal.generateStockidBal());
+	}
+	@Test
+	public void testDaoConnection() {
+		assertNotNull(DaoConnection.getConnection());
+	}
+	@Test
+	public void testGettersAndSetters() {
+		Stock objStock = new Stock();
+		objStock.setStockid("S001");
+		objStock.setItemName("Iphone");
+		objStock.setPrice(98000);
+		objStock.setQuantityAvail(10);
+		
+		assertEquals("S001", objStock.getStockid());
+		assertEquals("Iphone", objStock.getItemName());
+		assertEquals(98000, objStock.getPrice(),0.00);
+		assertEquals(10, objStock.getQuantityAvail());
+	}
+
+}

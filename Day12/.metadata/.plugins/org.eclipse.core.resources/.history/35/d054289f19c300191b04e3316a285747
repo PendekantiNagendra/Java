@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+    <form name="form1" action="OrderServlet">
+      <table>
+        <tr>
+          <td> Id : </td>
+          <td> <input type="text" name="Id" size="20 /></td>
+        </tr>
+      </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+package com.hcl.Varars;
+
+class First {
+	public void show() {
+		System.out.println("First Class");
+	}
+}
+
+class Second extends First {
+	public void show() {
+		super.show();
+		System.out.println("Second Class");
+	}
+}
+
+public class InhDemo {
+	public static void main(String[] args) {
+	/*	Second sec = new Second();
+		sec.show();
+		*/
+		First obj = new Second();
+		obj.show();
+		
+		First f1=(First)obj;
+		obj.show();
+		First f2=(Second)obj;
+		obj.show();
+	}
+
+}

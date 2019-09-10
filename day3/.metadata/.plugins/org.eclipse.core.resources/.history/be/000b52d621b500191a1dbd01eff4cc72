@@ -1,0 +1,12 @@
+package com.hcl.ex;
+class Employ {
+	String name;
+	public Employ(String name){
+		this.name=name;
+	}
+	@Override
+	public String toString() {
+		return "Employ [name=" + name + "]";
+	}
+	
+}

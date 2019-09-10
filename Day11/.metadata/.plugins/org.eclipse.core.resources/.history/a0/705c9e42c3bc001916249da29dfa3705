@@ -1,0 +1,57 @@
+package com.hcl.threads;
+
+class Data {
+	void DispMsg(String name) {
+		System.out.println("Hello " + name);
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("How are u...");
+	}
+}
+
+class Uttam extends Thread {
+	Data d;
+
+	Uttam(Data d) {
+		this.d = d;
+	}
+
+	@Override
+	public void run() {
+		d.DispMsg("Uttam");
+	}
+}
+
+class Laksh extends Thread {
+	Data d;
+
+	Laksh(Data d) {
+		this.d = d;
+	}
+
+	@Override
+	public void run() {
+		d.DispMsg("Laksh");
+	}
+}
+
+class Hema extends Thread {
+	Data d;
+
+	Hema(Data d) {
+		this.d = d;
+	}
+
+	@Override
+	public void run() {
+		d.DispMsg("Hema");
+	}
+}
+
+public class SyncEx {
+
+}

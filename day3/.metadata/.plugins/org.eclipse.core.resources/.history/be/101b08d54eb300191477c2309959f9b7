@@ -1,0 +1,14 @@
+package com.hcl.Varars;
+class First{
+	public void show(){
+		System.out.println("First Class");
+	}
+}
+class Second{
+	public void show(){
+		System.out.println("First Class");
+	}
+}
+public class InhDemo {
+
+}

@@ -1,0 +1,59 @@
+package com.hcl.cms;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table (name="Feedback")
+public class Feedback {
+	private String fId;
+	private String studentName;
+	private String instructor;
+	private String subject;
+	private String fbvalue;
+	
+	@Id
+	@Column(name="fId")
+	public String getfId() {
+		return fId;
+	}
+	public void setfId(String fId) {
+		this.fId = fId;
+	}
+	
+	@Column(name="studentName")
+	public String getStudentName() {
+		return studentName;
+	}
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+	
+	@Column(name="instructor")
+	public String getInstructor() {
+		return instructor;
+	}
+	public void setInstructor(String instructor) {
+		this.instructor = instructor;
+	}
+	
+	@Column(name="subject")
+	public String getSubject() {
+		return subject;
+	}
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+	
+	@Column(name="fbvalue")
+	public String getFbvalue() {
+		return fbvalue;
+	}
+	public void setFbvalue(String fbvalue) {
+		this.fbvalue = fbvalue;
+	}
+	
+	
+}

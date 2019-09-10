@@ -1,0 +1,8 @@
+package com.hcl.library;
+
+public class LibraryBAL {
+             public static String issueBAL(int bookId,String username) {
+            	 return new LibraryDAO().issue(bookId, username);
+             }
+}
+ 

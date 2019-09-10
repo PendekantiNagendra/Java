@@ -1,0 +1,12 @@
+package com.hcl.ex;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class ChkDemo {
+  public static void main(String[] args) throws IOException {
+    FileInputStream f1 = new FileInputStream("c:/hello.txt");
+    f1.close();
+  }
+
+}

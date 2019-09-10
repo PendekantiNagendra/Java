@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+      <form method="get" action="CreateAccount.jsp">
+       <center>
+           Stock Id :
+           <input type="text" name="stockid" /> <br/><br/>
+            Item Name :
+           <input type="text" name="ItemName" /> <br/><br/>
+            Price :
+           <input type="text" name="Price" /> <br/><br/>
+            Quantity Avail :
+           <input type="text" name="QuantityAvail" /> <br/><br/>
+           <input type="submit" value="Create Account" /> 
+       </center>
+    </form>
+</body>
+</html>

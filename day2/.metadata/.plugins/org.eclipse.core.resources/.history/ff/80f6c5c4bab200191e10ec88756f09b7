@@ -1,0 +1,12 @@
+package Access;
+
+public class OtClass extends Demo {
+	public void test(){
+		OtClass obj=new OtClass();
+		System.out.println(obj.x);
+		System.out.println(obj.basic);
+		System.out.println(obj.city);
+		
+	}
+
+}

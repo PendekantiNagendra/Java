@@ -1,0 +1,7 @@
+package com.hcl.library;
+
+public class LibraryBAL {
+	public static boolean authenticateBal(String user, String pwd) {
+		return new LibraryDAO().authenticate(user, pwd);
+	}
+}

@@ -1,0 +1,20 @@
+package com.hcl.inventory;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+
+
+public class StockDao {
+	PreparedStatement pst;
+	  Connection con;
+	  
+	public String generateStockidDao() {
+		con = DaoConnection.getConnection();
+		String stockid = "";
+		String cmd = " ";
+		// TODO Auto-generated method stub
+		return stockid;
+	}
+
+}

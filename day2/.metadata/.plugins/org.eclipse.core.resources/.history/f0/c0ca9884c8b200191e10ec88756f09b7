@@ -1,0 +1,20 @@
+package com.hcl.Inh;
+
+public class Custom {
+	
+	public void calc(String name){
+		String str="Nagendra";
+		int i=0;
+		for (char c : str ) {
+			i++;
+		}
+		
+	}
+	 
+	public static void main(String[] args) {
+		Custom obj=new Custom();
+		obj.calc();
+	}
+	
+
+}

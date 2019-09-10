@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+      Select name :
+      <input tyoe="text"  List="nameList" name="Student" />
+      <datalist id="namesList" >
+      <option label="Gopal" value="Gopal Pitani" />
+      <option label="Kranthi" value="Kranthi Venkat" />
+      <option label="Lakshmi" value="Lakshmi" />
+      <option label="Ram" value="Ram Gopal" />
+      </datalist>
+</body>
+</html>

@@ -1,0 +1,13 @@
+package com.hcl.bank;
+
+public class Accounts {
+	private int accountNo;
+	private String firstName;
+	private String lastName;
+	private String city;
+	private String state;
+	private int amount;
+	private String cheqFacil;
+	private String accountType;
+
+}

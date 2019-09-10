@@ -1,0 +1,24 @@
+package com.hcl.abstrac;
+
+/**
+ *class.
+ *
+ */
+
+public class AbsTest {
+
+/**
+ * method.
+ *
+ */	
+	
+	public static void main(String[] args) {
+		Animl[] a1 = new Animl[] { new Lionn(), new Crocodil() };
+
+		for (Animl animal : a1) {
+			animal.name();
+			animal.type();
+		}
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.hcl.jdbc;
+
+import java.util.Scanner;
+
+public class EmployUpdate {
+	public static void main(String[] args) {
+		int empno, basic;
+		String name, desig;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Employ No");
+		empno = Integer.parseInt(sc.nextLine());
+		System.out.println("Name of Employ");
+		name = sc.nextLine();
+		System.out.println("Designation");
+		desig = sc.nextLine();
+		System.out.println("Basic");
+		basic = Integer.parseInt(sc.nextLine());
+	}
+
+}

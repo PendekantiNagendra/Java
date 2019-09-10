@@ -1,0 +1,23 @@
+package com.hcl.Varars;
+
+class First {
+	public void show() {
+		System.out.println("First Class");
+	}
+}
+
+class Second extends First {
+	public void show() {
+		super.show();             
+		System.out.println("Second Class");
+	}
+}
+
+public class InhDemo {
+	public static void main(String[] args) {
+		Second sec = new Second();
+		sec.show();
+		
+	}
+
+}

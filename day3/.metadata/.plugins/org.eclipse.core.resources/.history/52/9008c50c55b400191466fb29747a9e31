@@ -1,0 +1,23 @@
+package com.hcl.abstrac;
+/**
+ * class.
+ *
+ */
+
+public class AbsCon {
+	/**
+	 * method.
+	 *
+	 */
+	
+	public static void main(String[] args) {
+		Emp obj1 = new Janan(1, "Janani", 45896);
+		Emp obj2 = new Ragu(2, "Raghu", 45978);
+
+		Emp[] arr = new Emp[] { obj1, obj2 };
+		for (Emp employ : arr) {
+			System.out.println(employ);
+		}
+	}
+
+}

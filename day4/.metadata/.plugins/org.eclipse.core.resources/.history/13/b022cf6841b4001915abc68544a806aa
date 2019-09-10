@@ -1,0 +1,18 @@
+package com.hcl.files;
+
+/**
+ * class FileInfo.
+ *
+ */
+
+public class FileInfo {
+	/**
+	 *main.
+	 *
+	 */
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

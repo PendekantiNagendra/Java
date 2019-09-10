@@ -1,0 +1,9 @@
+package com.hcl.inventory;
+
+public class Inventory {
+	private String stockid;
+	private String itemName;
+	private int price;
+	private int quantityAvail;
+
+}

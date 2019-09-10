@@ -1,0 +1,14 @@
+package com.hcl.abstrac;
+
+class Lionn extends Animl {
+
+  @Override
+  void name() {
+    System.out.println("Name is Lion..");
+  }
+
+  @Override
+  void type() {
+    System.out.println("Type is Wild");
+  }
+}

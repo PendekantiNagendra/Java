@@ -1,0 +1,19 @@
+package com.hcl.enums;
+  /**
+  * Day.
+  *
+  */
+
+  enum Day {
+  MONDAY, TUESDAY, WEDNESDAY
+}
+
+public class Enum {
+	public static void main(String[] args) {
+		Day d=Day.MONDAY;
+		Day w=Day.WEDNESDAY;
+		System.out.println(d);
+		System.out.println(w);
+	}
+
+}

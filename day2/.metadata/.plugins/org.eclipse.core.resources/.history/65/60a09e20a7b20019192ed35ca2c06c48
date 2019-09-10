@@ -1,0 +1,12 @@
+package com.hcl.boxing;
+
+public class StringQuiz {
+	public void (object ob){
+		if(ob=="ABC"){
+			System.out.println("Correct A abd D");	
+		}else{
+			System.out.println(Error B and C);
+		}
+	}
+
+}

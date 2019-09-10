@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+     <form method="get" action="Menu.jsp"></form>
+     <a href="Create Account">Open Account</a> <br/><br/>
+     <a href="Search Account">Search Account</a> <br/><br/>
+     <a href="Update Account">Update Account</a> <br/><br/>
+     <a href="Close Account">Close Account</a> <br/><br/>
+     <a href="Deposit Account">Deposit Account</a> <br/><br/>
+     <a href="Withdraw Account">Withdraw Account</a> <br/><br/>
+     </form>
+</body>
+</html>

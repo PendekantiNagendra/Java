@@ -1,0 +1,24 @@
+package com.hcl.inventory;
+
+
+public class StockBal {
+	
+	public static String generateStockidBal() {
+		return new StockDao().generateStockidDao();
+	}
+
+	public static String addStockBal(Stock stock) {
+		return new StockDao().addStockDao(stock);
+	}
+
+	public static Stock searchStockBal(String stockid) {
+		// TODO Auto-generated method stub
+		return new StockDao().searchStockBal(stockid);
+	}
+
+	public static int generateOrderid() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

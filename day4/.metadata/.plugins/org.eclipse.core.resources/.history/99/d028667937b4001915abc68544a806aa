@@ -1,0 +1,27 @@
+package com.hcl.ex;
+
+/**
+ * class Ex3.
+ *
+ */
+
+public class Ex3 {
+  /**
+  *method main.
+  *
+  */ 
+  public static void main(String[] args) {
+    try {
+      System.out.println("A");
+      throw new NullPointerException();
+    } catch (ArithmeticException e) {
+      System.out.println(e);
+    } catch(NullPointerException e){ 
+      //System.out.println("Error.."); 
+      throw new NumberFormatException();
+    } catch(NumberFormatException e){
+      System.out.println("Rethrown Error..");
+    }
+  }
+
+}

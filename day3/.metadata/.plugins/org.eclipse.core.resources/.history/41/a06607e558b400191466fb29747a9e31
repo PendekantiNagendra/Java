@@ -1,0 +1,5 @@
+package com.hcl.enums;
+
+enum Day {
+MONDAY, TUESDAY, WEDNESDAY
+}

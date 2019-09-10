@@ -1,0 +1,28 @@
+package com.hcl.products;
+
+public class Product {
+	private String product;
+	private int quatityAvail;
+    private int price;
+	public String getProduct() {
+		return product;
+	}
+	public void setProduct(String product) {
+		this.product = product;
+	}
+	public int getQuatityAvail() {
+		return quatityAvail;
+	}
+	public void setQuatityAvail(int quatityAvail) {
+		this.quatityAvail = quatityAvail;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+     public void product() {
+    	 System.out.println("Product :" + product +"Quantity Avail :" + quatityAvail + "Price :" + price);
+     }
+}

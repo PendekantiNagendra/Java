@@ -1,0 +1,8 @@
+package com.hcl.cms;
+
+public class FbCount { 
+	
+	private int fbvalue;
+    private int count(*);
+
+}

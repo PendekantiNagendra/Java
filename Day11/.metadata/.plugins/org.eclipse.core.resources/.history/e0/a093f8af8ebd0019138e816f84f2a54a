@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<center>
+        <table border="3" cellPadding="4">
+        <tr>
+              <th> Empno</th>
+              <th>Name</th>
+              <th>Salary,
+                  
+        </tr>
+        <tr>
+            <td>1</td>
+            <td> Uttam</td>
+            
+        </tr>
+        </table>
+</center>
+</body>
+</html>

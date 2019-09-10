@@ -1,0 +1,6 @@
+package com.hcl.boxing;
+
+public class Test {
+	int a=5,b=6;
+
+}
